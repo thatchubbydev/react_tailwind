@@ -2,21 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root{
   --primary-blue:#00d8ef;
   --primary-purple:#6a00ff
 }
 
 @layer base{
+ 
   h1{
     @apply text-3xl font-bold
   }
 
   li{
-    @apply px-4 text-center
+    @apply p-4 text-center
   }
 
   button{
-    @apply bg-gradient-to-r from-[var(--primary-purple)] to-[var(--primary-blue)] rounded-full p-2 px-4 text-center
+    @apply bg-gradient-to-r from-[var(--primary-purple)] to-[var(--primary-blue)] rounded-full p-2 px-4 text-center space-x-2 md:mt-0
   }
 }
